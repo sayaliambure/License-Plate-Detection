@@ -1,0 +1,10 @@
+activate conda:
+conda activate yolov4-cpu
+
+
+command to run image:
+python detect.py --weights ./checkpoints/custom-416 --size 416 --model yolov4 --images ./data/images/car2.jpg --plate
+
+
+command to run video:
+python detect_video.py --weights ./checkpoints/custom-416 --size 416 --model yolov4 --video ./data/video/license_plate.mp4 --output ./detections/recognition.avi --plate
